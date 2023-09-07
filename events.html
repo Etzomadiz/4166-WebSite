@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href = "styles/default.css" type = "text/css" rel = "stylesheet"> 
 </head>
+<div data-include="components/header.html"></div>
 <body>
-    
+    <div class="header">
+        <h2>Upcoming Events</h2>
+    </div>
+    <div class="container">
+        <div class="category">
+            <h2>Category 1</h2>
+            <div class="event">
+                <h3><a href="event-details.html">Event 1</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+            <div class="event">
+                <h3><a href="event-details.html">Event 2</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+            <div class="event">
+                <h3><a href="event-details.html">Event 3</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Category 2</h2>
+            <div class="event">
+                <h3><a href="event-details.html">Event 4</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+            <div class="event">
+                <h3><a href="event-details.html">Event 5</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+            <div class="event">
+                <h3><a href="event-details.html">Event 6</a></h3>
+                <p>Event description goes here...</p>
+            </div>
+        </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
