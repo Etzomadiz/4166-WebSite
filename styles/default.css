@@ -161,5 +161,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: green;
 }
+.logoImg{
+  text-align: left;
+ size-adjust: 50px;
+
+  
+}
 
 /* Add more specific styles for form elements if needed */
