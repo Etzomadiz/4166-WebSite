@@ -9,6 +9,59 @@ h1 {
   text-align: center;
   color: #333;
 }
+/* Navbar container */
+.navbar {
+  background-color: #333; /* Background color for the navbar */
+  overflow: hidden;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left; /* Display links side by side */
+  display: block; /* Make the entire link area clickable */
+  color: #fff; /* Link text color */
+  text-align: center; /* Center-align text */
+  padding: 14px 16px; /* Spacing around the text */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+}
+
+/* Navbar links on hover */
+.navbar a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: #333; /* Text color on hover */
+}
+
+/* Active link */
+.navbar .active {
+  background-color: #007BFF; /* Background color for the active link */
+  color: #fff; /* Text color for the active link */
+}
+
+/* Navbar logo */
+.navbar .logo {
+  float: left; /* Align the logo to the left */
+  padding: 10px 16px; /* Adjust padding as needed */
+  font-size: 20px; /* Logo font size */
+  font-weight: bold; /* Logo font weight */
+  color: #fff; /* Logo text color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 600px) {
+  .navbar a {
+      float: none; /* Reset float for small screens */
+      display: block; /* Display links as blocks */
+      text-align: left; /* Left-align text */
+  }
+
+  .navbar .logo {
+      float: none; /* Reset float for small screens */
+      text-align: center; /* Center-align logo text */
+      margin-bottom: 10px; /* Add some spacing below the logo */
+  }
+}
 
 form {
   max-width: 500px;
@@ -21,7 +74,7 @@ form {
 
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   font-weight: bold;
   color: #333;
 }

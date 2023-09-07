@@ -6,9 +6,10 @@
     <title>Document</title>
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
 </head>
+<div data-include="components/header.html"></div>
 <body>
     <h1>Add Event</h1>
-    <form action="submit_event.php" method="POST" enctype="multipart/form-data">
+    <form action="#" method="POST" enctype="multipart/form-data">
         <label for="event_category">Category:</label>
         <select id="event_category" name="event_category">
             <option value="music">Music</option>
@@ -18,28 +19,30 @@
             <option value="other">Other</option>
         </select><br><br>
 
-        <label for="event_name">Event Name:</label>
-        <input type="text" id="event_name" name="event_name" required><br><br>
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="event_name" required><br><br>
 
-        <label for="start_date">Start Date:</label>
-        <input type="date" id="start_date" name="start_date" required><br><br>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="start_date" required><br><br>
 
-        <label for="end_date">End Date:</label>
-        <input type="date" id="end_date" name="end_date" required><br><br>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="end_date" required><br><br>
 
-        <label for="event_time">Event Time:</label>
-        <input type="time" id="event_time" name="event_time" required><br><br>
+        <label for="eventTime">Event Time:</label>
+        <input type="time" id="eventTime" name="event_time" required><br><br>
 
-        <label for="event_location">Event Location:</label>
-        <input type="text" id="event_location" name="event_location" required><br><br>
+        <label for="eventLocation">Event Location:</label>
+        <input type="text" id="eventLocation" name="event_location" required><br><br>
 
-        <label for="event_description">Event Description:</label><br>
-        <textarea id="event_description" name="event_description" rows="4" cols="50" required></textarea><br><br>
+        <label for="eventDescription">Event Description:</label><br>
+        <textarea id="eventDescription" name="event_description" rows="4" cols="50" required></textarea><br><br>
 
-        <label for="event_image">Event Image:</label>
-        <input type="file" id="event_image" name="event_image"><br><br>
+        <label for="eventImage">Event Image:</label>
+        <input type="file" id="eventImage" name="event_image"><br><br>
 
         <input type="submit" value="Add Event">
     </form>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
