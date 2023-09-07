@@ -16,8 +16,9 @@ a:hover { color: red; }
 header
 {
   font-family: Tahoma, serif;
-  text-align: center;
+  text-align: left;
   color: black;
+  background-color: green;
 }
 
 table, th, td
