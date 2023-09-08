@@ -56,7 +56,6 @@ h1 {
 .navbar {
   background-color: #333; /* Background color for the navbar */
   overflow: hidden;
-  padding-bottom: auto;
 }
 
 /* Navbar links */
@@ -68,7 +67,7 @@ h1 {
   padding: 14px 16px; /* Spacing around the text */
   text-decoration: none; /* Remove underline */
   font-size: 16px; /* Font size */
-  height: px;
+  
 }
 
 /* Navbar links on hover */
@@ -94,7 +93,7 @@ h1 {
 }
 
 /* Responsive navbar */
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 800px) {
   .navbar a {
       float: none; /* Reset float for small screens */
       display: block; /* Display links as blocks */
@@ -166,4 +165,75 @@ input[type="submit"]:hover {
   float: left;
 }
 
-/* Add more specific styles for form elements if needed */
+body, p, button {
+  margin: auto;
+  padding: 0;
+}
+
+/* Apply some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style the event detail section */
+.event-detail {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the event title */
+/* Style host and date information */
+p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Style the event description */
+.event-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Style action buttons */
+.action-buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.eventImg{
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: auto; /* Push the footer to the bottom */
+}
